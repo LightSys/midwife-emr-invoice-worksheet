@@ -53,10 +53,10 @@ const data = [
   {
     category: 'Other',
     items: [
-      {code: 'F01', desc: 'Caster Oil per bottle', rate: 55},
+      {code: 'F01', desc: 'Castor Oil per bottle', rate: 55},
       {code: 'F02', desc: 'Urinary Cathether per piece', rate: 50},
       {code: 'F03', desc: 'Urinary Bag', rate: 75},
-      {code: 'F04', desc: 'Cephalexin per tablet', rate: 8},
+      {code: 'F04', desc: 'Cephalexin per SET (21 tablets)', rate: 168},
       {code: 'F05', desc: 'Calciblock per tablet', rate: 15},
       {code: 'F09', desc: 'Iron Tabs/each per tablet', rate: 3},
       {code: 'F15', desc: 'Gramstain/Papsmear', rate: 80},
