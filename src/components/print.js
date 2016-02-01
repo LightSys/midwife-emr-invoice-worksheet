@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
+import _ from 'lodash'
 
-const Print = ({propsData, stateData}) => {
+const Print = ({propsData, stateData, user, supervisor, amtPaid}) => {
   let grandTotal = 0
   let items = propsData.map((cat) => {
     return cat.items.map((item) => {
@@ -19,6 +20,12 @@ const Print = ({propsData, stateData}) => {
       }
     })
   })
+  if (_.isNull(amtPaid)) amtPaid = 0
+  const netTotal = grandTotal - amtPaid
+  let userSpan
+  let superSpan
+  if (user) userSpan = <span> by <span className='text-info'>{user}</span></span>
+  if (user && supervisor) superSpan = <span className='text-info'> / {supervisor}</span>
   return (
     <div className='panel panel-default visible-print-block'>
       <div className='panel-body'>
@@ -37,7 +44,22 @@ const Print = ({propsData, stateData}) => {
             {items}
           </tbody>
         </table>
-        <div className='text-right'><strong>Worksheet total: {grandTotal}</strong></div>
+        <table className='table'>
+          <tbody>
+            <tr>
+              <td className='text-right'><strong>Worksheet total</strong></td>
+              <td className='text-right'><strong>{grandTotal}</strong></td>
+            </tr>
+            <tr>
+              <td className='text-right'><strong>Amount collected {userSpan}{superSpan}</strong></td>
+              <td className='text-right'><strong>{amtPaid}</strong></td>
+            </tr>
+            <tr>
+              <td className='text-right'><strong>Net total</strong></td>
+              <td className='text-right'><strong>{netTotal}</strong></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   )

@@ -44,13 +44,15 @@ class ItemGroup extends Component {
               <tbody>
                 {itemLines}
               </tbody>
+              <tfoot>
+                <tr className='info'>
+                  <td colSpan='3'></td>
+                  <td><strong>Total:</strong></td>
+                  <td><strong>{groupTotal}</strong></td>
+                </tr>
+              </tfoot>
             </table>
           </form>
-        </div>
-        <div className='panel-footer'>
-          <div className='text-right'>
-            Total: {groupTotal}
-          </div>
         </div>
       </div>
     )
