@@ -29,10 +29,17 @@ const deriveSubtitleMidwifeSuper = () => {
 const App = () => {
   // Allow caller to specify a subtitle by passing a hash on the url.
   const {subTitle, user, supervisor} = deriveSubtitleMidwifeSuper()
+  let userSuperBadge = ''
+  if (user && !supervisor) {
+    userSuperBadge = <span className='badge'>{user}</span>
+  }
+  if (user && supervisor) {
+    userSuperBadge = <span className='badge'>{user} / {supervisor}</span>
+  }
   return (
     <div className='container'>
       <div className='page-header'>
-        <h1>Invoice Worksheet <small>{subTitle} <span className='badge'>{user} / {supervisor}</span></small></h1>
+        <h1>Invoice Worksheet <small>{subTitle} {userSuperBadge}</small></h1>
       </div>
       <div className='panel panel-default hidden-print'>
         <ul>

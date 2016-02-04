@@ -47,7 +47,7 @@ const Print = ({propsData, stateData, user, supervisor, amtPaid}) => {
         <table className='table'>
           <tbody>
             <tr>
-              <td className='text-right'><strong>Worksheet total</strong></td>
+              <td className='text-right'><strong>Amount due</strong></td>
               <td className='text-right'><strong>{grandTotal}</strong></td>
             </tr>
             <tr>
@@ -55,7 +55,7 @@ const Print = ({propsData, stateData, user, supervisor, amtPaid}) => {
               <td className='text-right'><strong>{amtPaid}</strong></td>
             </tr>
             <tr>
-              <td className='text-right'><strong>Net total</strong></td>
+              <td className='text-right'><strong>Balance remaining</strong></td>
               <td className='text-right'><strong>{netTotal}</strong></td>
             </tr>
           </tbody>

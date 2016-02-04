@@ -63,7 +63,7 @@ class Worksheet extends Component {
         <div className='panel panel-default hidden-print'>
           <div className='panel-body text-right'>
             <div>
-              <strong>Worksheet Total: {grandTotal}</strong>
+              <strong>Amount due: {grandTotal}</strong>
             </div>
             <div>
               <AmountPaid

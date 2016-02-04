@@ -6,7 +6,7 @@ const Total = ({grandTotal, amtPaid}) => {
   if (netTotal < 0) netTotal = 0
   return (
     <div>
-      <strong>Net Total: {netTotal}</strong>
+      <strong>Balance remaining: {netTotal}</strong>
     </div>
   )
 }
