@@ -8,7 +8,7 @@ const common = {
   context: __dirname + '/src',
   entry: './index.js',
   output: {
-    path: 'build',
+    path: 'static/invoiceWorksheet',
     filename: 'bundle.js'
   },
   module: {
