@@ -10,6 +10,7 @@ const data = [
       {code: 'A05', desc: 'Laundry', rate: 150},
       {code: 'A06', desc: 'Birth Certificate', rate: 30},
       {code: 'A07', desc: 'Notary for Birth Certificate', rate: 70},
+      {code: 'A08', desc: 'AUSF', rate: 250},
     ]
   },
   {
