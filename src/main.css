@@ -1,3 +1,14 @@
 body {
   background: cornsilk;
 }
+
+/* Make the printed page quite concise so that multiple
+ * pages are not required in most cases.
+ */
+.visible-print-block table > tbody > tr > td {
+  line-height: 15px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
