@@ -12,3 +12,11 @@ body {
   padding-bottom: 0;
   border: 0;
 }
+
+/* Pull the total section while printing to the left better
+ * so that the numbers are not cut off by some printers.
+ * Aligns better with the totals above too.
+ */
+#print-total {
+  margin-right: 50px;
+}
