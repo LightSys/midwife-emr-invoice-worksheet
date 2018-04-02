@@ -1,15 +1,15 @@
 {
-  "name": "invoice_worksheet",
+  "name": "mercy_invoice_worksheet",
   "version": "1.0.0",
-  "description": "Experimental",
+  "description": "Invoice worksheet for Mercy Maternity Center.",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --watch",
     "start": "webpack-dev-server"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "LightSys Technological Services, Inc.",
+  "license": "AGPLv3",
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
